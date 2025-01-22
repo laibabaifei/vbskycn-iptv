@@ -33,3 +33,23 @@ social:
 sass:
   style: compressed
 
+# 添加 IndexNow 配置
+indexnow:
+  enable: true
+  key: 005d84fed5f74c34ac71d8fdbf7e493b # 需要替换成你的 IndexNow API key
+  host: live.zbds.top
+
+# 添加 sitemap 配置
+plugins:
+  - jekyll-sitemap
+
+# Sitemap 设置
+sitemap:
+  filename: sitemap.xml
+  exclude:
+    - "/404.html"
+    - "/assets/"
+    - "/*.txt"
+  include_posts:
+    - "/index.html"
+
